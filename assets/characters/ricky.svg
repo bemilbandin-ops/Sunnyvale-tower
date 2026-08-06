@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 360">
+  <g stroke="#18130f" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="132" cy="337" rx="90" ry="14" fill="#000" opacity=".16" stroke="none"/>
+    <path fill="#24262a" d="M76 205l49-4 13 104-15 34H70l5-72z"/>
+    <path fill="#24262a" d="M131 202l52 6 11 96-8 35h-55l8-35z"/>
+    <path d="M86 225v99M102 225v99M153 224v100M169 226v98" stroke="#f2f2e8" stroke-width="5"/>
+    <path fill="#17191d" d="M61 329h66l-6 20H52q-9-13 9-20zm67 0h64q18 8 8 20h-72z"/>
+    <path fill="#f0a481" d="M67 141q-26 15-27 71l2 49q2 24 25 21l15-8-7-67 12-47z"/>
+    <path fill="#f0a481" d="M190 145q24 15 26 61l-3 58q-5 22-28 17l-11-10 8-64-10-44z"/>
+    <path fill="#f5f2e8" d="M70 134q59-29 124 2l-10 91-46 16-67-22z"/>
+    <path fill="#121212" d="M75 141l20-9 18 22-18 17-22-15zm40-10 21 1-8 23-20-2zm35 0 23 5-14 21-22-7zm29 10 17 13-18 16-19-12zM86 176l20-10 18 18-18 18-22-10zm45-18 21 10-8 23-23-7zm36 15 21 7-6 25-24-12zM78 207l21-8 17 20-18 17-22-13zm48-7 23 4-7 26-24-9zm34 8 22 8-8 22-24-12z" stroke="none"/>
+    <path fill="#e8bd43" d="M104 139q31 24 59-2" stroke-width="5"/>
+    <path fill="#f0a481" d="M84 83q1-52 48-58 52 4 54 56l-6 49q-14 35-49 36-35-1-51-36z"/>
+    <path fill="#6c371e" d="M72 84q-1-57 61-73 59 2 63 58-22-25-55-24 21-16 5-29-26 25-74 68z"/>
+    <path fill="#8e512b" d="M85 55q20-31 51-33 30-1 44 22-43-10-95 11z" stroke="none"/>
+    <path fill="#6c371e" d="M75 98q5 33 24 45l5-32-8-29zm109-7q-1 37-22 53l-3-31 9-30z"/>
+    <path d="M103 101q14-9 29 0m13 0q13-9 26 0" fill="none"/>
+    <path fill="#2a1b16" d="M112 106q10 8 18 0-7 18-18 0zm39 0q9 7 17 0-5 17-17 0z" stroke="none"/>
+    <path d="M128 126q7 7 16 0" fill="none"/>
+    <path fill="#6a351f" d="M105 127q27 13 57-1-7 34-31 34-22-2-26-33z"/>
+    <path fill="#f0a481" d="M121 126q10 10 21 0l-3 13h-17z" stroke-width="5"/>
+    <path d="M154 117l43 14" fill="none"/>
+    <path fill="#f7f2df" d="M191 125l35 12-5 11-36-13z"/>
+    <path fill="#d94d2b" d="M223 137l13 5-5 11-12-5z" stroke-width="4"/>
+  </g>
+</svg>
