@@ -6,10 +6,12 @@
   <meta name="theme-color" content="#151a16" />
   <title>Sunnyvale Survival — Stack Prototype</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="cartoon-theme.css" />
 </head>
 <body>
   <main id="app">
     <section id="menu" class="screen active">
+      <div class="menu-scene" aria-hidden="true"><div class="menu-cloud c1"></div><div class="menu-cloud c2"></div><div class="menu-trailer t1"></div><div class="menu-trailer t2"></div><div class="menu-trailer t3"></div><div class="menu-road"></div></div>
       <div class="menu-grain"></div>
       <div class="menu-shell">
         <div class="title-wrap">
@@ -19,15 +21,15 @@
         </div>
         <div class="character-grid" aria-label="Choose a driver">
           <button class="character-card selected" data-character="ricky">
-            <img src="assets/characters/ricky.png" alt="Ricky" />
+            <img src="assets/characters/ricky.svg" alt="Ricky" />
             <span><b>Ricky</b><small>Explosive damage. Active: Shitstorm Barrage.</small></span>
           </button>
           <button class="character-card" data-character="bubbles">
-            <img src="assets/characters/bubbles.png" alt="Bubbles" />
+            <img src="assets/characters/bubbles.svg" alt="Bubbles" />
             <span><b>Bubbles</b><small>Better repairs. Active: Emergency Rebuild.</small></span>
           </button>
           <button class="character-card" data-character="julian">
-            <img src="assets/characters/julian.png" alt="Julian" />
+            <img src="assets/characters/julian.svg" alt="Julian" />
             <span><b>Julian</b><small>More layer health. Active: Plan B shield.</small></span>
           </button>
         </div>
@@ -108,6 +110,7 @@
       </div>
     </div>
   </main>
+  <script src="cartoon-art.js"></script>
   <script src="game.js"></script>
 </body>
 </html>
