@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#151a16" />
+  <title>Sunnyvale Survival — Stack Prototype</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main id="app">
+    <section id="menu" class="screen active">
+      <div class="menu-grain"></div>
+      <div class="menu-shell">
+        <div class="title-wrap">
+          <p class="overline">Minimum useful tower prototype</p>
+          <h1>Sunnyvale<br><span>Stack Attack</span></h1>
+          <p class="lede">Build a three-layer rolling junk fortress. Every deck has its own weapon and health. Lose a lower deck and the rest slam down a level.</p>
+        </div>
+        <div class="character-grid" aria-label="Choose a driver">
+          <button class="character-card selected" data-character="ricky">
+            <img src="assets/characters/ricky.png" alt="Ricky" />
+            <span><b>Ricky</b><small>Explosive damage. Active: Shitstorm Barrage.</small></span>
+          </button>
+          <button class="character-card" data-character="bubbles">
+            <img src="assets/characters/bubbles.png" alt="Bubbles" />
+            <span><b>Bubbles</b><small>Better repairs. Active: Emergency Rebuild.</small></span>
+          </button>
+          <button class="character-card" data-character="julian">
+            <img src="assets/characters/julian.png" alt="Julian" />
+            <span><b>Julian</b><small>More layer health. Active: Plan B shield.</small></span>
+          </button>
+        </div>
+        <div class="menu-actions">
+          <button id="start-btn" class="primary">Start prototype</button>
+          <button id="how-btn" class="secondary">How it works</button>
+        </div>
+        <p class="controls-note">Space: active ability · R: repair weakest deck · P/Esc: pause</p>
+      </div>
+    </section>
+
+    <section id="game" class="screen">
+      <canvas id="canvas" width="1280" height="720" aria-label="Sunnyvale Stack Attack game"></canvas>
+      <div class="top-hud">
+        <div class="driver-chip"><img id="driver-img" alt="" /><div><small>Driver</small><b id="driver-name">Ricky</b></div></div>
+        <div class="stat-chip"><small>Road</small><b id="distance">0%</b></div>
+        <div class="stat-chip"><small>Scrap</small><b id="scrap">0 / 6</b></div>
+        <div class="stat-chip"><small>Kills</small><b id="kills">0</b></div>
+        <button id="pause-btn" class="hud-button" aria-label="Pause">Ⅱ</button>
+      </div>
+
+      <aside class="layer-panel">
+        <div class="layer-heading"><span>Stack integrity</span><b id="layer-count">2 / 3</b></div>
+        <div id="layer-list"></div>
+      </aside>
+
+      <div id="boss-hud" class="boss-hud hidden"><div><span>Government seizure captain</span><b id="boss-phase">Phase 1</b></div><div class="boss-track"><i id="boss-fill"></i></div></div>
+
+      <div class="ability-panel">
+        <button id="repair-btn" class="repair-button"><span>🔧</span><b>Repair weakest</b><small id="repair-count">2 kits</small></button>
+        <button id="ability-btn" class="ability-button"><span id="ability-title">Shitstorm Barrage</span><b id="ability-state">Ready</b></button>
+      </div>
+
+      <div id="build-ready" class="build-ready hidden"><span>Enough roadside scrap</span><button id="build-btn">Build / upgrade</button></div>
+      <div id="banner" class="banner hidden"></div>
+      <div id="toast-stack" class="toast-stack"></div><div class="rotate-notice"><b>Rotate device</b><span>This prototype is designed for landscape play.</span></div>
+    </section>
+
+    <div id="how-modal" class="modal hidden">
+      <div class="modal-card">
+        <h2>How the stack works</h2>
+        <div class="rules">
+          <article><b>Separate health</b><p>Every deck has its own HP bar and independently mounted weapon.</p></article>
+          <article><b>Targeted attacks</b><p>Runners and bruisers hit the bottom. Raccoons climb. Bottles hit random decks.</p></article>
+          <article><b>Collapse</b><p>When a deck breaks, every deck above it crashes down, takes impact damage, and stops firing briefly.</p></article>
+          <article><b>Roadside building</b><p>Collect six scrap to add the third deck, replace weapons, reinforce, or repair.</p></article>
+        </div>
+        <button class="primary close-modal">Got it</button>
+      </div>
+    </div>
+
+    <div id="build-modal" class="modal hidden">
+      <div class="modal-card wide">
+        <p class="overline">Roadside construction stop</p>
+        <h2 id="build-title">Add the third layer</h2>
+        <div id="build-options" class="build-options"></div>
+      </div>
+    </div>
+
+    <div id="pause-modal" class="modal hidden">
+      <div class="modal-card compact">
+        <h2>Paused</h2>
+        <p>The road, enemies, weapons, and collapse timers are frozen.</p>
+        <button id="resume-btn" class="primary">Resume</button>
+        <button id="restart-btn" class="secondary">Restart run</button>
+        <button id="quit-btn" class="danger">Return to menu</button>
+      </div>
+    </div>
+
+    <div id="end-modal" class="modal hidden">
+      <div class="modal-card compact">
+        <p class="overline" id="end-kicker">Run complete</p>
+        <h2 id="end-title">The stack survived</h2>
+        <p id="end-copy"></p>
+        <div id="end-stats" class="end-stats"></div>
+        <button id="again-btn" class="primary">Run it again</button>
+        <button id="menu-btn" class="secondary">Return to menu</button>
+      </div>
+    </div>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>

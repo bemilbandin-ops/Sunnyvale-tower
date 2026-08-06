@@ -1,0 +1,22 @@
+{
+  "prototype": "three-layer rolling fortress",
+  "maxLayers": 3,
+  "collapse": {
+    "survivorImpactDamagePercent": 8,
+    "weaponDowntimeSeconds": 1.05,
+    "dropDistancePixels": 126
+  },
+  "startingStack": [
+    {"name":"Shitmobile chassis","hp":250,"weapon":"chainsaw"},
+    {"name":"Shopping-cart deck","hp":145,"weapon":"nailgun"}
+  ],
+  "buildThreshold": 6,
+  "weapons": ["chainsaw","nailgun","rocket","flamer","boomerang"],
+  "enemyTargeting": {
+    "drunk":"bottom",
+    "bruiser":"bottom",
+    "raccoon":"top",
+    "bottle":"random",
+    "agent":"most valuable weapon"
+  }
+}

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 170">
+<defs>
+ <linearGradient id="metal" x2="0" y2="1"><stop stop-color="#7c8580"/><stop offset=".55" stop-color="#434b48"/><stop offset="1" stop-color="#242a28"/></linearGradient>
+ <pattern id="mesh" width="18" height="18" patternUnits="userSpaceOnUse"><path d="M0 0l18 18M18 0L0 18" stroke="#151715" stroke-width="2" opacity=".55"/></pattern>
+</defs>
+<g stroke="#17120f" stroke-width="8" stroke-linejoin="round" stroke-linecap="round">
+ <path fill="#3e352d" d="M25 133h370l-18 26H43z"/>
+ <path fill="url(#metal)" d="M44 112h330v31H44z"/>
+ <path fill="#69726e" d="M55 27h24v90H55zm286 0h24v90h-24z"/>
+ <path fill="none" d="M67 35h286v70H67z"/>
+ <path fill="url(#mesh)" d="M67 35h286v70H67z"/>
+ <path fill="#8a4b2d" d="M82 96h92v24H82zm165 0h86v24h-86z"/>
+ <path fill="#4d4034" d="M111 12h190v24H111z"/>
+ <path fill="none" d="M119 12V4m174 8V4"/>
+</g>
+<g fill="#c0733e"><circle cx="69" cy="127" r="4"/><circle cx="349" cy="127" r="4"/><circle cx="210" cy="127" r="4"/></g>
+</svg>

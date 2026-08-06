@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 170">
+<defs><linearGradient id="wall" x2="0" y2="1"><stop stop-color="#d1c39f"/><stop offset="1" stop-color="#7b705b"/></linearGradient><pattern id="scratches" width="25" height="25" patternUnits="userSpaceOnUse"><path d="M4 22L21 5M-4 12L8 0" stroke="#33271f" stroke-width="2" opacity=".15"/></pattern></defs>
+<g stroke="#17120f" stroke-width="8" stroke-linejoin="round" stroke-linecap="round">
+ <path fill="#3e352d" d="M24 134h372l-20 25H43z"/>
+ <path fill="#655744" d="M58 25h304v112H58z"/>
+ <path fill="url(#wall)" d="M72 38h276v88H72z"/>
+ <path fill="url(#scratches)" d="M72 38h276v88H72z"/>
+ <path fill="#546260" d="M93 51h76v51H93zm156 0h76v51h-76z"/>
+ <path fill="none" d="M105 62h52M105 77h52M261 62h52M261 77h52"/>
+ <path fill="#8f4f2f" d="M184 42h50v84h-50z"/>
+ <path fill="#504535" d="M94 16h232v24H94z"/>
+</g>
+<path d="M86 118l34-21 33 21 38-24 34 24 37-20 34 20" fill="none" stroke="#a1472d" stroke-width="7"/>
+</svg>
