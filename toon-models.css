@@ -1,0 +1,51 @@
+/* Gameplay model pass: smaller silhouettes, richer materials, less uniform UI framing. */
+.character-card {
+  border-width: 3px;
+  border-color: #2b201a;
+  box-shadow: 0 6px 0 #68452f, inset 0 1px 0 rgba(255,255,255,.45);
+  background: linear-gradient(145deg, #dcc997 0%, #c8ae76 100%);
+}
+.character-card.selected {
+  background: linear-gradient(145deg, #fff2cc 0%, #e8cf91 100%);
+  box-shadow: 0 7px 0 #a74a2d, inset 0 1px 0 rgba(255,255,255,.65);
+}
+.character-card img {
+  width: 104px;
+  height: 142px;
+  border-width: 3px;
+  border-color: #31231d;
+  background:
+    radial-gradient(circle at 40% 24%, rgba(255,255,255,.55), transparent 30%),
+    linear-gradient(#b7dce4, #8fbdc7 70%, #809f79 70%);
+  filter: drop-shadow(0 5px 3px rgba(50,31,22,.28));
+}
+.driver-chip img {
+  object-fit: contain;
+  object-position: center bottom;
+  padding: 1px;
+  filter: drop-shadow(0 2px 1px rgba(31,21,17,.25));
+}
+.layer-panel,
+.driver-chip,
+.stat-chip,
+.hud-button,
+.repair-button,
+.ability-button,
+.build-ready,
+.banner,
+.toast {
+  border-width: 3px;
+}
+.layer-index,
+.hp-track {
+  border-width: 2px;
+}
+#canvas {
+  image-rendering: auto;
+}
+@media(max-width:850px) {
+  .character-card img {
+    width: 76px;
+    height: 101px;
+  }
+}
